@@ -1,15 +1,7 @@
 name: Release
 
 on:
-  push:
-    tags: ['v*']
   workflow_dispatch:
-    inputs:
-      version:
-        description: 'Package/release version to publish to npm, without the leading v'
-        required: true
-        type: string
-
 env:
   CARGO_TERM_COLOR: always
   RUSTFLAGS: -Dwarnings
