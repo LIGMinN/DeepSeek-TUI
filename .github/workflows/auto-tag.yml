@@ -14,13 +14,7 @@ name: Auto-tag on version bump
 # (`git push origin v$VERSION` from a developer machine) to trigger release.
 
 on:
-  push:
-    branches: [main]
-    paths:
-      - 'Cargo.toml'
-      - 'npm/deepseek-tui/package.json'
   workflow_dispatch:
-
 permissions:
   contents: write
 
